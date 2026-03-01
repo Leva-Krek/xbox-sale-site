@@ -1,77 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Xbox Sale</title>
-<style>
-body {
-    font-family: Arial;
-    background: #111;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: #1f1f1f;
-    padding: 20px;
-    text-align: center;
-    font-size: 28px;
-}
-
-.banner {
-    text-align: center;
-    margin: 20px;
-}
-
-.banner img {
-    max-width: 90%;
-    border-radius: 10px;
-}
-
-.games {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.card {
-    background: #1e1e1e;
-    border-radius: 12px;
-    padding: 10px;
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.price {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-.discount {
-    color: #00ff88;
-    font-weight: bold;
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог игр Xbox</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-Xbox Распродажа
+<header class="header">
+  <h1>Игры Xbox со скидкой</h1>
+  <div class="filters">
+    <input type="text" id="search" placeholder="Поиск по названию">
+    <select id="platformFilter">
+      <option value="">Все платформы</option>
+      <option value="XboxOne">Xbox One</option>
+      <option value="XboxSeriesX">Xbox Series X</option>
+    </select>
+    <select id="sort">
+      <option value="discount">Сначала большие скидки</option>
+      <option value="cheap">Сначала дешёвые</option>
+      <option value="expensive">Сначала дорогие</option>
+      <option value="rating">По рейтингу</option>
+    </select>
+    <label><input type="checkbox" id="onlyDiscount"> Только со скидкой</label>
+  </div>
 </header>
 
-<div class="banner">
-<img src="BANNER_LINK" alt="Sale Banner">
-</div>
+<main>
+  <div id="games" class="grid"></div>
+  <div id="pagination" class="pagination"></div>
+</main>
 
-<div class="games">
-GAME_BLOCK
-</div>
-
+<script src="catalog.js"></script>
 </body>
 </html>

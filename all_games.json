@@ -1,0 +1,15 @@
+{
+  "games": [
+    {
+      "id": "9MXZBTLG26VX",
+      "title": "EA SPORTS FC™ 26 Standard Edition Xbox One & Xbox Series X|S",
+      "poster": "https://store-images.s-microsoft.com/image/apps.39200.14145291960194275.263e78bd-2ea0-43c6-8a5b-5578131f4b02.ba171ef6-2bab-4956-b9d7-e67e253520d1",
+      "rating": 2.5,
+      "platforms": ["XboxOne","XboxSeriesX"],
+      "discount": 60,
+      "discount_end": "03/04/2026 23:59:59",
+      "price_current_rub": 2799,
+      "price_original_rub": 6999
+    }
+  ]
+}

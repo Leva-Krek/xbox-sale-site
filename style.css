@@ -1,0 +1,20 @@
+body { font-family: Arial, sans-serif; margin:0; padding:0; }
+.header { padding: 15px; background:#111; color:white; }
+.header h1 { margin:0 0 10px 0; font-size:1.5em; }
+.filters input, .filters select { margin:0 5px 5px 0; padding:5px; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(180px,1fr)); gap:15px; padding:15px; }
+.card { display:block; text-decoration:none; color:#000; border:1px solid #ccc; border-radius:5px; overflow:hidden; }
+.card img { width:100%; display:block; }
+.card-body { padding:5px; }
+.discount { color:red; font-weight:bold; }
+.price { font-weight:bold; }
+.old-price { text-decoration: line-through; color:#888; }
+.pagination { text-align:center; padding:10px; }
+.pagination button { margin:2px; padding:5px 10px; }
+.fixed-buy { position:fixed; bottom:0; width:100%; background:#111; padding:10px; }
+.fixed-buy a { display:block; text-align:center; background:#00c853; padding:15px; border-radius:8px; color:white; font-weight:bold; }
+.game-page { display:flex; flex-direction:column; align-items:center; padding:15px; }
+.game-page img { max-width:300px; width:100%; margin-bottom:15px; }
+.info { max-width:400px; width:100%; }
+.discount-big { color:red; font-weight:bold; font-size:1.2em; }
+.price-big { font-weight:bold; font-size:1.2em; }
